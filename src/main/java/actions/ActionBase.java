@@ -188,13 +188,12 @@ public abstract class ActionBase {
 
     /**
      * リクエストスコープから指定されたパラメータの値を取得し、返却する
-     * @param key パラメータ名
+     * @param repColLikeCount パラメータ名
      * @return パラメータの値
      */
     protected String getRequestParam(AttributeConst key) {
         return request.getParameter(key.getValue());
     }
-
     /**
      * リクエストスコープにパラメータを設定する
      * @param key パラメータ名
